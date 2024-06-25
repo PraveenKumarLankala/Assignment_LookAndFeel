@@ -1,14 +1,38 @@
-/**
- * Your JS code here
- */
+function toggleWishlist(element) {
+    if (element.style.color === 'red') {
+        element.style.color = '#ccc';  // Not in wishlist, show default color
+    } else {
+        element.style.color = 'red';  // In wishlist, show red color
+    }
+}
 
-/**
- * Sample code
- */
-document.addEventListener('DOMContentLoaded', function() {
-  var ulElement = document.getElementById('links');
-  var liElement = document.createElement('li');
-  liElement.appendChild(document.createTextNode('created by main.js'));
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownMenu = dropdown.querySelector('.dropdown-menu');
 
-  ulElement.appendChild(liElement);
+    dropdown.addEventListener('mouseover', function (event) {
+        dropdownMenu.classList.add('show');
+        dropdown.setAttribute('aria-expanded', true);
+    });
+
+    dropdown.addEventListener('mouseout', function (event) {
+        dropdownMenu.classList.remove('show');
+        dropdown.setAttribute('aria-expanded', false);
+    });
+
 });
+
+function showToast() {
+    var toastEl = document.getElementById('cartToast');
+    var toast = new bootstrap.Toast(toastEl);
+    toast.show();
+}
+
+function toggleNavbar() {
+    const navbar = document.getElementById('navbarNav');
+    if (navbar.style.display === 'block') {
+        navbar.style.display = 'none'; // Hide the navbar collapse if it's visible
+    } else {
+        navbar.style.display = 'block'; // Show the navbar collapse if it's hidden
+    }
+}
