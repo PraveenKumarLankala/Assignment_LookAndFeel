@@ -28,11 +28,4 @@ function showToast() {
     toast.show();
 }
 
-function toggleNavbar() {
-    const navbar = document.getElementById('navbarNav');
-    if (navbar.style.display === 'block') {
-        navbar.style.display = 'none'; // Hide the navbar collapse if it's visible
-    } else {
-        navbar.style.display = 'block'; // Show the navbar collapse if it's hidden
-    }
-}
+
