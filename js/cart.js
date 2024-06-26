@@ -1,9 +1,9 @@
 // Sample item data, replace with dynamic data as necessary
 const items = [
-    { id: 1, name: "Product 1", img: "./img/Category offer/pexels-micaasato-1082529.jpg", price: 29.99, tax: 2.99 },
-    { id: 2, name: "Product 2", img: "./img/Category offer/pexels-kish-1488464.jpg", price: 39.99, tax: 3.99 },
-    { id: 3, name: "Product 3", img: "./img/Category offer/pexels-pixabay-46212.jpg", price: 25.99, tax: 2.09 },
-    { id: 4, name: "Product 4", img: "./img/Category offer/pexels-pixabay-267320.jpg", price: 55.99, tax: 5.60 }
+    { id: 1, name: "Men's Nike Cap", img: "./img/Men/img7.png", price: 80.00, tax: 2.99 },
+    { id: 2, name: "Women Air Shirt", img: "./img/Women/img7.png", price: 120.00, tax: 3.99 },
+    { id: 3, name: "Nike Kids Dress", img: "./img/Kids/img7.png", price: 180.00, tax: 2.09 },
+    { id: 4, name: "Men's Nike shoes", img: "./img/Men/img4.png", price: 100.00, tax: 5.60 }
 ];
 
 function populateCart() {
